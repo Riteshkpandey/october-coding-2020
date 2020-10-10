@@ -4,7 +4,6 @@
 Return the smallest level X such that the sum of all the values of nodes at level X is maximal.
 
  
-
 Example 1:
 
 
