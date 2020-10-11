@@ -1,0 +1,23 @@
+w,h,n,m=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+c=[]
+for i in range(n):
+    for j in range(m):
+        c.append([a[i],b[j]])
+#print(c)    
+d=[]
+for i in range(h):
+    if i not in b:
+        for j in range(n):
+            d.append([a[j],i])
+print(d)   
+count=0
+for i in c:
+    for j in d:
+        if abs(i[0]-j[0])==abs(i[1]-j[1]):
+            print(i,j)
+            count+=1
+            
+            
+            
