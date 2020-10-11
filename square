@@ -11,7 +11,8 @@ for i in range(h):
     if i not in b:
         for j in range(n):
             d.append([a[j],i])
-print(d)   
+#print(d)   
+
 count=0
 for i in c:
     for j in d:
