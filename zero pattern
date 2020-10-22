@@ -1,0 +1,15 @@
+from collections import defaultdict
+for _ in range(int(input())):
+    n=int(input())
+    d=dict()
+    for i in range(n-1):
+        u,v=map(int,input().split())
+        d[u]+=1
+        d[v]+=1
+                
+    a=list(map(int,input().split()))    
+    c=0
+    for i in range(n):
+        if d[a[i]]>1 and a[i]!=0:
+            c+=1
+    print(c)
