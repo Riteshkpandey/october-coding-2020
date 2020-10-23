@@ -1,0 +1,50 @@
+from collections import defaultdict,deque
+def bfs():
+    vis=[False]*(n+1)
+    dis=[0]*(n+1)
+    dist=0
+    node=0
+    q=deque([1])
+    while q:
+        x=q.popleft()
+        for y,z in d[x]:
+            if not vis[y]:
+                vis[y]=True
+                dis[y]=dis[x]+z
+                if dis[y]>=dist:
+                    dist=dis[y]
+                    node=y
+                q.append(y) 
+    vis=[False]*(n+1)
+    dis=[0]*(n+1)
+    dist=0
+    
+    q=deque([node])
+    while q:
+        x=q.popleft()
+        for y,z in d[x]:
+            if not vis[y]:
+                vis[y]=True
+                dis[y]=dis[x]+z
+                if dis[y]>=dist:
+                    dist=dis[y]
+                    node=y
+                q.append(y) 
+    if dist>10000:
+        c=10000
+    elif dist>1000:
+        c=1000
+    elif dist>100:
+        c=100
+    else:
+        c=0
+    print(c,dist)                               
+
+for _ in range(int(input())):
+    n=int(input())
+    d=defaultdict(list)
+    for _ in range(n-1):
+        u,v,w=map(int,input().split())
+        d[u].append((v,w))
+        d[v].append((u,w))
+    bfs()    
