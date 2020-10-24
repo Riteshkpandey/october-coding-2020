@@ -1,9 +1,10 @@
-for _ in range(int(input())):
-    m=int(input())
-    x = m*m*m
-    #print(1,m-1)
-    v = x - 8-(m-2)*12
-    x= (m-2)*(m-2)*6
-    y = v-x
-    print(1,'/',m-1,sep="")
+solution:
+    for _ in range(int(input())):
+        m=int(input())
+        x = m*m*m
+        #print(1,m-1)
+        v = x - 8-(m-2)*12
+        x= (m-2)*(m-2)*6
+        y = v-x
+        print(1,'/',m-1,sep="")
    
