@@ -1,6 +1,5 @@
 from collections import defaultdict,deque
 def bfs():
-
     vis=[False]*(n+1)
     dis=[0]*(n+1)
     dist=0
