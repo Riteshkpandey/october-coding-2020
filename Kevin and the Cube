@@ -1,5 +1,6 @@
 Solution:
 
+
     for _ in range(int(input())):
         m=int(input())
         x = m*m*m
