@@ -8,10 +8,7 @@ for _ in range(int(input())):
         else:
             d[ele] = 1
     m =999999
-    count = 0
-    
-    
-    
+    count = 0  
     for ele in d:
         count+=1
         
