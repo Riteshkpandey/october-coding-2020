@@ -18,8 +18,7 @@ def bfs():
                 q.append(y) 
     vis=[False]*(n+1)
     dis=[0]*(n+1)
-    dist=0
-    
+    dist=0    
    q=deque([node])
     while q:
         x=q.popleft()
