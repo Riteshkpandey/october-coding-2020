@@ -20,7 +20,7 @@ def bfs():
     dis=[0]*(n+1)
     dist=0
     
-    q=deque([node])
+   q=deque([node])
     while q:
         x=q.popleft()
         for y,z in d[x]:
