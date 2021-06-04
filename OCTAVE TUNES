@@ -10,8 +10,7 @@ for _ in range(int(input())):
     m =999999
     count = 0  
     for ele in d:
-        count+=1
-        
+        count+=1        
         if m>d[ele]:
             print(d[ele])
             m = d[ele]
