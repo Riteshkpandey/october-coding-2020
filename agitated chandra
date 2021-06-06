@@ -1,4 +1,5 @@
 solution:
+
 from collections import defaultdict,deque
 def bfs():
     vis=[False]*(n+1)
