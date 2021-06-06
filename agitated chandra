@@ -48,3 +48,4 @@ for _ in range(int(input())):
         d[u].append((v,w))
         d[v].append((u,w))
     bfs()    
+    
