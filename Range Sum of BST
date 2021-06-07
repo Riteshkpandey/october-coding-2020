@@ -16,8 +16,7 @@ class Solution(object):
             if n.val>=L and n.val<=R:
                 self.sm+=n.val
             dfs(n.left)
-            dfs(n.right)
-            
+            dfs(n.right)            
             
         dfs(root)        
         return self.sm
