@@ -11,8 +11,7 @@ Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,
 class Solution:
     def allPossibleFBT(self, N: int) -> List[TreeNode]:
         if (N - 1) % 2 != 0 :
-            return []
-        
+            return []        
         w = [[TreeNode(0)]]
         for n in range(3,N + 1,2):
             
