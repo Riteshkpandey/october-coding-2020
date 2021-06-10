@@ -29,6 +29,5 @@ class Solution(object):
                 s.remove(root.val)
             else:
                 s.add(root.val)
-        check(root,s)        
-                
+        check(root,s)                        
         return self.res
